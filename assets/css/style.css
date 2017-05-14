@@ -1,0 +1,81 @@
+body {
+	color: #ddd;
+	background: #000;
+	position: relative;
+}
+
+i {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.navbar-custom {
+	background: #000;
+	border-bottom: 2px;
+}
+
+.navbar-nav:focus {
+	background: #999;
+}
+
+#title {
+
+	text-align: center;
+	padding-top: 40vh;
+	height: 92vh;
+	background: url(../images/intro-bg.jpg) bottom center no-repeat #000;
+	background-size: cover;
+}
+
+.spy {
+	height: 1px;
+	margin-bottom: 89px;
+}
+
+#contactinfo {
+	padding-top: 80px;
+	height: 450px;
+	background: url(../images/bottom.jpg) center center no-repeat #000;
+	background-size: cover;
+	width: 100%;
+}
+
+
+
+.banner {
+	margin-left: -235px;
+	width: 900px;
+	height: 30px;
+	background: gray;
+	opacity: .6;
+}
+
+a {
+	line-height: 30px;
+	color: white;
+	opacity: 1;
+}
+
+.space {
+	margin-top: 13vh;
+	padding-top: 10vh;
+	height: 101vh;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: 700;
+}
+
+h2 {
+	border-top: 1px solid #bbb;
+}
+
+footer {
+	text-align: center;
+	margin-top: 32vh;
+}
+
+span {
+	font-weight: 700;
+}
