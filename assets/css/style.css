@@ -1,7 +1,14 @@
 body {
+	text-align: center;
 	color: #ddd;
 	background: #000;
 	position: relative;
+	font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, nav {
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 i {
@@ -14,12 +21,11 @@ i {
 	border-bottom: 2px;
 }
 
-.navbar-nav:focus {
-	background: #999;
+.navbar-inverse .navbar-nav .active a {
+	background-image: #000;
 }
 
 #title {
-
 	text-align: center;
 	padding-top: 40vh;
 	height: 92vh;
@@ -40,8 +46,6 @@ i {
 	width: 100%;
 }
 
-
-
 .banner {
 	margin-left: -235px;
 	width: 900px;
@@ -57,25 +61,80 @@ a {
 }
 
 .space {
-	margin-top: 13vh;
+	margin-top: 43vh;
 	padding-top: 10vh;
-	height: 101vh;
+	min-height: 80vh;
+	overflow: auto;
+	margin-bottom: 30vh;
 }
 
 h1 {
-	font-size: 70px;
-	font-weight: 700;
+	font-size: 100px;
+	font-weight: 900;
 }
 
 h2 {
 	border-top: 1px solid #bbb;
+	font-size: 36px;
+	font-weight: 700;
 }
 
 footer {
 	text-align: center;
-	margin-top: 32vh;
+	margin-top: 31vh;
 }
 
 span {
 	font-weight: 700;
+}
+
+.info {
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	color: #6fd;
+	transition: color .4s;
+}
+
+.info:hover {
+	color: #3ca;
+	text-decoration: none;
+}
+
+img {
+	max-width: 95%;
+	max-height: 250px;
+	border-radius: 5px;
+	border: 1px #888 solid;
+	transition: margin .2s;
+}
+
+.solo {
+	max-width: 95%;
+	max-height: 100vh;
+	height: auto;
+	margin-top: 80px;
+	transition: opacity .8s;
+	border: 0;	
+}
+ 
+.wrap {
+	border-radius: 5px;
+	margin-top: 100px;
+	margin-left: -4px;
+	background: #444;
+	position: absolute;
+	width: 82vw;
+	height: 100px;
+}
+
+#adjust {
+	margin-bottom: 60px;
+}
+
+.imgBar:hover {
+	margin-top: -10px;
+}
+
+.solo:hover {
+	opacity: .6;
 }
