@@ -89,6 +89,7 @@ span {
 }
 
 .info {
+	text-align: center;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 20px;
 	color: #6fd;
@@ -100,41 +101,53 @@ span {
 	text-decoration: none;
 }
 
+.info:focus {
+	color: #2b9;
+	text-decoration: none;
+}
+
 img {
-	max-width: 95%;
+	max-width: 85%;
 	max-height: 250px;
 	border-radius: 5px;
 	border: 1px #888 solid;
 	transition: margin .2s;
+	margin-bottom: 50px;
+	color: #333;
 }
 
 .solo {
 	max-width: 95%;
-	max-height: 100vh;
-	height: auto;
+	max-height: 90%;
 	margin-top: 80px;
-	transition: opacity .8s;
-	border: 0;	
 }
- 
-.wrap {
-	border-radius: 5px;
-	margin-top: 100px;
-	margin-left: -4px;
-	background: #444;
-	position: absolute;
-	width: 82vw;
-	height: 100px;
+
+.banner {
+	margin-top: -40px;
+	position: relative;
+	width: 50%;
+	background: #888;
+	opacity: 0.9;
+	height: 30px;
+}
+
+.pop {
+	color: #ddd;
+	
 }
 
 #adjust {
 	margin-bottom: 60px;
+	width: 99%;
 }
 
 .imgBar:hover {
 	margin-top: -10px;
 }
 
-.solo:hover {
-	opacity: .6;
+@media screen and (max-width: 990px) {
+	.imgBar:hover {
+		margin-top: 0px;
+	}
 }
+

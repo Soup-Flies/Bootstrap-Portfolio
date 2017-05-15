@@ -30,6 +30,10 @@
 
 <script>
 $(document).ready(function(){
+
+		$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+	})
   // Add smooth scrolling to all links
   $("a.locate").on('click', function(event) {
 
@@ -54,7 +58,11 @@ $(document).ready(function(){
 
     if (!$("#navDrop").hasClass("collapsed")) {
     $("#navDrop").click();
-}
+	}
+
+
+
+
   });
 });
 
@@ -115,24 +123,32 @@ $(document).ready(function(){
 	<div id="about" class="spy"></div>
 	<h2>About</h2>
 
-<p>When I was in elementary school I went to a neighbors garage sale. I found a gift that I thought my dad would be interested in, a book on programming C++. While I never personally read the book, I always thought that I would enjoy coding of some sort. Fast forward to my late teens and a friend of mine turns me onto Linux. I start to play around in the terminal and hack together my 1st script to automatically download all of the webcomics I enjoyed reading so much. At one point I decided to compile my own kernel of Linux from scratch which I found to be quite the adventure. Another friend introduced Project Euler to me and I have been off and on playing with problems on there with Python. I lost touch with most forms of coding until recently at work I wrote a VBA script to automate some forms I need to fill out for our customers shipping information, and it was at that time I made the call to finally get into a coding bootcamp.</p>
+		<p>When I was in elementary school I went to a neighbors garage sale. I found a gift that I thought my dad would be interested in, a book on programming C++. While I never personally read the book, I always thought that I would enjoy coding of some sort. Fast forward to my late teens and a friend of mine turns me onto Linux. I start to play around in the terminal and hack together my 1st script to automatically download all of the webcomics I enjoyed reading so much. At one point I decided to compile my own kernel of Linux from scratch which I found to be quite the adventure. Another friend introduced Project Euler to me and I have been off and on playing with problems on there with Python. I lost touch with most forms of coding until recently at work I wrote a VBA script to automate some forms I need to fill out for our customers shipping information, and it was at that time I made the call to finally get into a coding bootcamp.</p>
 
 	<div class="space">
 		<div id="portfolio" class="spy"></div>
 		<h2 id="adjust">Portfolio</h2>
 
-	<div class="wrap"></div>
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-4"><img class="imgBar" src="./assets/images/1.jpg" alt=""></div>
-			<div class="col-md-4"><img class="imgBar" src="./assets/images/4.jpg" alt=""></div>
-			<div class="col-md-4"><img class="imgBar" src="./assets/images/5.jpg" alt=""></div>
+			<div class="col-md-4 col-sm-12">
+				<img data-container="body" data-trigger="hover click" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<a class='pop' href=http://www.google.com>Hangman</a>" class="imgBar" src="./assets/images/1.jpg" alt="Hangman">
+		
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<img data-container="body" data-trigger="hover click" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<a class='pop' href=http://www.google.com>Trivia</a>"  class="imgBar" src="./assets/images/4.jpg" alt="Trivia">
+
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<img data-container="body" data-trigger="hover click" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<a class='pop' href=http://www.google.com>RPG</a>"  class="imgBar" src="./assets/images/5.jpg" alt="RPG">
+			</div>
 		</div>
 	
 		<div class="row">
-			<div class="img-fluid"><img class="solo" src="./assets/images/6.jpg" alt=""></div>
+			<div class="col-12"><img data-container="body" data-trigger="hover click" data-toggle="tooltip" data-placement="top" data-html="true" title="<a class='pop' href=http://www.google.com>Aria</a>" class="solo" src="./assets/images/6.jpg" alt=""></div>
 		</div>
 	</div>
-
+	</div>
 		
 </div>
 
